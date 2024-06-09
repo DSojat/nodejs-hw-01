@@ -15,8 +15,6 @@ const generateContacts = async number => {
 
     await fs.writeFile(PATH_DB, JSON.stringify(fileContent), 'utf8');
     console.log('Дані успішно записані у файл.');
-
-    // console.log(fileContent.length);
   } catch (error) {
     console.error('Помилка додавання даних до файлу:', error);
   }
